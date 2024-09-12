@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\yubaraj\documents\college\sem 5\oops lab\day2\calculatorcodeblocks\cointoss\main.cpp
+	<iostream>
+
+1722529161 source:c:\users\yubaraj\documents\college\sem 5\oops lab\day2\calculatorcodeblocks\cointoss\cointoss.cpp
+	<iostream>
+	<cstdlib>
+

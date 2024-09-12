@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1722527375 source:c:\users\yubaraj\documents\college\sem 5\oops lab\day2\calculatorcodeblocks\calculator\add.cpp
+	"calculator.h"
+
+1722527232 c:\users\yubaraj\documents\college\sem 5\oops lab\day2\calculatorcodeblocks\calculator\calculator.h
+
+1722528846 source:c:\users\yubaraj\documents\college\sem 5\oops lab\day2\calculatorcodeblocks\calculator\div.cpp
+	"calculator.h"
+
+1723092707 source:c:\users\yubaraj\documents\college\sem 5\oops lab\day2\calculatorcodeblocks\calculator\main.cpp
+	"calculator.h"
+	<iostream>
+
+1722527424 source:c:\users\yubaraj\documents\college\sem 5\oops lab\day2\calculatorcodeblocks\calculator\mul.cpp
+	"calculator.h"
+
+1722527396 source:c:\users\yubaraj\documents\college\sem 5\oops lab\day2\calculatorcodeblocks\calculator\sub.cpp
+	"calculator.h"
+
