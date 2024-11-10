@@ -3,12 +3,17 @@
 #include <stdexcept>
 using namespace std;
 
-class TriangleException
+class TriangleException : public exception
 {
 public:
   TriangleException()
   {
-    cout << "Exception: Sum of Two Sides is Less than Third Side" << endl;
+    cout << "Error Occurred!!!" << endl;
+  }
+
+  const char *what() const throw()
+  {
+    return "Invalid Sides for Triangle";
   }
 };
 
@@ -17,9 +22,10 @@ class Triangle
   float a, b, c;
 
 public:
+
   void setSides()
   {
-    cout << "Enter Three Sides of Triangle: ";
+    cout << "Enter Sides of Triangle: ";
     cin >> a >> b >> c;
   }
 
@@ -29,6 +35,7 @@ public:
     {
       throw TriangleException();
     }
+
     float s = (a + b + c) / 2;
     float area = sqrt(s * (s - a) * (s - b) * (s - c));
     cout << "Area of Triangle: " << area << endl;
@@ -44,12 +51,9 @@ int main()
   {
     t.calculateArea();
   }
-  catch (TriangleException e)
+  catch (TriangleException &e)
   {
-  }
-  catch (...)
-  {
-    cout << "Exception occurred!!" << endl;
+    cout << e.what() << endl;
   }
 
   return 0;

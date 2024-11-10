@@ -1,13 +1,11 @@
 #include <iostream>
 using namespace std;
-
 class Shape
 {
 public:
   virtual void area() = 0;
   virtual void perimeter() = 0;
 };
-
 class Square : public Shape
 {
   int side;
@@ -29,7 +27,6 @@ public:
     cout << "Perimeter of Square: " << 4 * side << endl;
   }
 };
-
 class Rectangle : public Shape
 {
   int length, breadth;

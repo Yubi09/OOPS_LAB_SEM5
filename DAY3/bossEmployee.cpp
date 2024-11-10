@@ -3,7 +3,6 @@
 #include <cstdlib>
 #include <ctime>
 using namespace std;
-
 class Employee
 {
   string name;
@@ -24,7 +23,6 @@ public:
   }
   friend class Boss;
 };
-
 class Boss
 {
 public:

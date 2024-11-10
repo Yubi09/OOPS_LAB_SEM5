@@ -20,7 +20,6 @@ class Thinking {
   }
 }
 
-
 public class ThinkingCap {
   public static void main(String[] args) {
     Thinking cap = new Thinking();

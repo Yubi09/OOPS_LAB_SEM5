@@ -17,31 +17,12 @@ public:
 
   int operator[](int i)
   {
-    if(i < 0 || i >= 5)
+    if (i < 0 || i >= 5)
     {
       cout << "Invalid Index" << endl;
       exit(0);
     }
     return marks[i];
-  }
-
-  void compare(Test t)
-  {
-    for (int i = 0; i < 5; i++)
-    {
-      if (marks[i] > t.marks[i])
-      {
-        cout << "Marks of Subject " << i + 1 << " are more in Object 1" << endl;
-      }
-      else if (marks[i] < t.marks[i])
-      {
-        cout << "Marks of Subject " << i + 1 << " are more in Object 2" << endl;
-      }
-      else
-      {
-        cout << "Marks of Subject " << i + 1 << " are equal in both Objects" << endl;
-      }
-    }
   }
 };
 
@@ -51,8 +32,21 @@ int main()
   t1.setMarks();
   t2.setMarks();
 
-  t1.compare(t2);
-
+  for (int i = 0; i < 5; i++)
+  {
+    if (t1[i] > t2[i])
+    {
+      cout << "Student 1 has more marks in Subject " << i + 1 << endl;
+    }
+    else if (t1[i] < t2[i])
+    {
+      cout << "Student 2 has more marks in Subject " << i + 1 << endl;
+    }
+    else
+    {
+      cout << "Both Students have same marks in Subject " << i + 1 << endl;
+    }
+  }
 
   return 0;
 }
